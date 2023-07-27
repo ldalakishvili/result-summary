@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{font-family: 'Hanken Grotesk', sans-serif; }
+
+body{
+ background-color: #ECF2FF;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+
+.card-div{
+max-width: 736px;
+width: 100%;
+display: grid;
+grid-template-columns:  1fr 1fr;
+border-radius: 32px;
+background-color:white ;
+box-shadow: 0 30px 60px 0 rgba(61,  108,  236,  0.16)
+}
+.result-div{
+ /* max-width: 368px; */
+ /* width: 100%; */
+ display: flex;
+ flex-direction: column;
+ align-items:center ;
+ background-image: linear-gradient(#7755FF 0%, #6943FF 50%,#2F2CE9 100%  );
+ text-align: center;
+ padding: 38px 54px 46px ;
+border-radius: 32px;
+
+}
+.result-header{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: #CAC9FF;
+}
+.circle{
+ margin: 35px 0 28px;
+background-image: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+ padding: 55px 59px 50px;
+ border-radius: 50%;
+}
+.number{
+ font-size: 72px;
+ font-weight: 800;
+ line-height: 72px;
+ letter-spacing: 0px;
+ text-align: center;
+ color: white;
+}
+.of-100{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0px;
+  color: #CAC9FF;
+}
+.text-header{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0px;
+  color: white;
+}
+.result-main{
+ display: flex;
+ flex-direction: column;
+ gap:14px;
+}
+.result-text{
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 23px;
+   color: #CAC9FF;
+}
+.summary-div{
+padding: 38px 40px 46px;
+display: flex;
+flex-direction: column;
+ /* max-width: 368px;
+  width: 100%; */
+}
+.summary-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.scores{
+margin: 28px 0 41px;
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+.score{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border-radius: 12px;
+ padding: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.red{
+
+ color:red; 
+ background-color: rgb(255, 243, 243);
+}
+.yellow{
+ color:rgb(255, 178, 30);
+ background-color:rgb(255, 252, 245)
+}
+.green{
+ background-color: rgb(255, 252, 245);
+ color:rgba(0, 187, 143, 1);
+}
+.blue{
+ color:blue;
+ background-color: rgb(255, 243, 243);
+}
+.summary-info{
+ display: flex;
+ gap: 17px;
+ align-items: center;
+}
+.score-perc{
+ color:gray ;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+span{
+ color: rgba(48, 59, 89, 1);
+}
+.summary-info img{
+ width: 20px;
+ height: 20px;
+}
+
+.continue-btn{
+
+ text-align: center;
+ padding:17px 107px;
+ font-size: 18px;
+ font-weight: 700;
+ line-height: 23px;
+ letter-spacing: 0px;
+ color: rgba(255, 255, 255, 1);
+ background-color: rgba(48, 59, 89, 1);
+border-radius: 128px;
+}
+.continue-btn:hover{
+background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+
+}
+@media(max-width:768px){
+
+ body{
+  align-items: flex-start;
+ }
+ .card-div{
+
+  grid-template-columns: 1fr;
+  border-top-right-radius:0;
+  border-top-left-radius: 0;
+ }
+ .result-div{
+  border-top-right-radius: 0;
+   border-top-left-radius: 0;
+     padding: 24px 58px 40px;
+   
+ }
+  .result-header {
+   font-size: 18px;
+   line-height: 24px;
+  
+  }
+    .circle {
+     margin: 24px 0;
+     padding: 25px 38px 22px;
+     border-radius: 50%;
+    }
+  
+    .number {
+     font-size: 56px;
+    }
+  
+    .of-100 {
+     font-size: 16px;
+    }
+        .text-header {
+         font-size: 24px;
+         line-height: 32px;
+        }
+    
+        .result-main {
+         gap: 8px;
+        }
+    
+        .result-text {
+         font-size: 16px;
+         line-height: 21px;
+        }
+    .summary-div {
+     padding: 24px 30px 30px;
+    }
+.summary-title {
+ font-size: 18px;
+ line-height: 24px;
+}
+
+.scores {
+ margin: 24px 0 ;
+}
+
+.score {
+ font-size: 16px;
+ line-height: 21px;
+}
+
+
+.score-perc {
+ font-size: 16px;
+ line-height: 21px;
+}
+
+
+.continue-btn {
+}
+
+.continue-btn:hover {
+ background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+
+}
+}
